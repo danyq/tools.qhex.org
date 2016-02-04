@@ -1,0 +1,18 @@
+These are the python scripts used by http://tools.qhex.org/
+a set of online puzzle solving tools made for the MIT Mystery Hunt, ~2012-2014.
+
+For descriptions of each script, see the corresponding page at http://tools.qhex.org/
+
+Each script takes input on stdin and prints results to stdout.
+
+Some of them use the claspy constraint solving library:
+https://github.com/danyq/claspy
+
+encoding.py uses the CMU Pronouncing Dictionary:
+http://www.speech.cs.cmu.edu/cgi-bin/cmudict
+
+Some tools use very large dictionaries that could not be included here:
+- wordplay.py requires a dictionary of words sorted by frequency (lowercase, one word per line).
+- caesarshift, extraction, and wordsearch use a dictonary of words with a numerical frequency score (1, 2, 3, 4 or 5). One word per line, followed by a space, then the frequency.
+
+For these, you may be able to substitute a common system dictionary such as /usr/share/dict/words and use a fixed frequency score.
